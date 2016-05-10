@@ -42,8 +42,14 @@ p {text-align:left; padding: 40px 150px;}
         </ul>
     </div>
     <div id="body">
-        <h1><span>our plan</span></h1>
-        <p> <font face="verdana" size="5"> What we tried to solve: Our goal was to create an inflatable desktop Baymax to perform basic interactions. We wanted to build a soft robot that would be able imitate the hugging motion with shoulder, arm, and wrist movements, as well as shake hands. The purpose of this Baymax is to be placed on top of a desk and provide entertainment and comfort to its users by interacting with them.</font> </p>
+        <h1><span>Problems we faced</span></h1>
+        <p> <font face="verdana" size="5">
+            - Our original plan involved making a life-sized Baymax using the Dynamixel AX-12a servos. However, the servos were not directly compatible with the Arduino, and so we decided to scale down Baymax. We ended up modifying our plan to make a desktop-sized Baymax instead.
+            - Our original Dynamixel AX-12a servos were too large to fit in the desktop-sized plushy Baymax suit. In addition, they were not directly compatible with the Arduino. Thus, we ended up using smaller Arduino-compatible servos in order for Baymax's arm skeleton to fit in his suit.<br/><br/>
+            - The smaller servos that we used for Baymax's elbow and wrist rotation were too weak to move his shoulders. To solve this, we used larger versions of the Arduino servos in order to get his should to full movement capacity.<br/><br/>
+            - Since we sewed the breadboard, Arduino, and battery into the back of Baymax's suit, the battery was constantly being used, which was a problem because it woud run out of juice in just a few hours. Therefore, we left a convenient slit in Baymax's back in order for the battery to be easily changed by the user.<br/><br/>
+            - The tension in Baymax's arm skin was sometimes too much for the servos to handle, so they wouldn't rotate as much as they should have. We solved this by attaching his arms closer to the outer edge of his skin so that there would be optimal room for rotation.
+        </font> </p>
     </div>
 
 </body>
