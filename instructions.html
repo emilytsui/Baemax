@@ -40,23 +40,43 @@
 	</div>
 	<div id="body">
 		<h1><span>instructions</span></h1>
-		<h2 style="padding: 20px 0">List of Materials:</h2> 
-
-		<br> <br>
+		<h2 style="padding: 20px 0 0">List of Materials:</h2> 
+		<p > <font face="verdana" size="4"> 
+		<ol style="padding: 0 0"> 
+		<li><a href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a></li><br>
+		<li> <a href="http://www.amazon.com/Disney-Baymax-Plush-Hero-Medium/dp/B00DHEPM3Q/ref=pd_sim_sbs_468_6?ie=UTF8&dpID=31UWFuBHTLL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=14T900BD24WXFKDJYDA3">Baymax Doll</a> </li> <br>
+		<li><a href="http://www.amazon.com/SunFounder-Project-Starter-Arduino-Mega2560/dp/B00D9NQDAG/ref=sr_1_1?ie=UTF8&qid=1462858914&sr=8-1">Arduino Starter Kit</a></li> <br>
+		<li><a href="https://www.adafruit.com/product/258">Lithium Ion Polymer Batteries</a> </li> <br>
+		<li><a href="http://www.amazon.com/Hitec-31311S-HS-311-Standard-Universal/dp/B0006O3WVE/ref=pd_sim_21_8?ie=UTF8&dpID=41kC%2BGUwslL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=0G5RNNQHK48R9A488B23">Arduino Standard Servos (x2)</a></li> <br>
+		<li><a href="http://www.amazon.com/FS90R-Continuous-Rotation-degree-Arduino/dp/B01BRH0S6U/ref=sr_1_6?ie=UTF8&qid=1462859411&sr=8-6"> Arduino Continuous Rotation Micro Servos (x4) </a></li>
+		<br> <li>(Needle, Thread, Scissors, Super Glue)</li>
+		</ol></font></p>
+		<br> 
 		=======
 		<p > <font face="verdana" size="4"> 
 		<ol style="padding: 20px 250px">
-			<li>Purchase your very own Baymax doll from <a href="http://www.amazon.com/Disney-Baymax-Plush-Hero-Medium/dp/B00DHEPM3Q/ref=pd_sim_sbs_468_6?ie=UTF8&dpID=31UWFuBHTLL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=14T900BD24WXFKDJYDA3">here</a> </li> <br>
+			<li>Purchase your very own Baymax doll from the link above. </li> <br>
             <li>Cut small slits in his arms so that pieces of the dimensions below can snugly fit inside. Cut a 1-inch slit on each shoulder, as shown below. Then cut 1/2-inch slits underneath his palms and at his elbow positions on each arm.</li> <br>
             <img src="Media/arm.jpg" width="50%" height="50%"> <br>
 			<img src="lasercut/dimensions.png" width="50%" height="50%"> <br>
 			<li>Use the dimensions above to laser cut pieces for all 3 components of the arm (shoulder -> elbow -> wrist). The dxf file to use with the laser cut program has been made accessible to you and can be found in the "lasercut" folder in the github repository (link provided in Links section). Make 2 sets of the cuts - 1 for each arm. </li> <br>
 			<li>Glue the servo horns of your choice, and attach the servos and glue the acrylic pieces in the manner shown in these pictures</li> <br>
 			<img style="float:center;display:inline" src="Media/aerial-arm-piece.jpg" width="40%" height="40%"> <img style="float:center;display:inline" src="Media/side-arm-piece.jpg" width="40%" height="40%"> <br> <br>
-            <li> Attach the servo horns of the black servos to the round knobs at the shoulders of the Baymax plush doll. </li>
-            <li> Allow the wires coming out of the servos to exit the doll through the slits you have cut. Connect the orange line of each servo to a pin in the Arduino, and the red and black wires to the 5V and Ground pins coming from the Arduino, respectively. Use the following schematic to guide you in wiring the servos to the Arduino. The code provided in the github repository file "SmallServo.ino" follows this schematic. If you decide to change which pins you connect to the servos, make sure those changes are reflected in the file you upload to the Arduino as well. </li>
-            <img src="Arduino Diagram.jpg" width="50%" height="50%"> <br>
-            <li> Upload your code to the Arduino. </li>
+            <li> Attach the servo horns of the big servos to the round knobs at the shoulders of the Baymax plush doll. </li>
+            <br> 
+            <p><i>Use the following schematic to guide you in wiring the servos to the Arduino. The code provided in the github repository file "SmallServo.ino" follows this schematic. If you decide to change which pins you connect to the servos, make sure those changes are reflected in the file you upload to the Arduino as well.</i></p>
+            <br> <br>
+            <img src="Arduino Diagram.jpg" width="50%" height="50%"> <br> <br>
+            <li> Allow the wires coming out of the servos to exit the doll through the slits you have cut. Connect the orange line of each servo to a pin in the Arduino, and the red and black wires to the 5V and Ground pins coming from the Arduino, respectively. </li> <br>
+            <li>Connect the 2 buttons, along with 10K ohm resistors for each, as shown in the diagram.</li>
+            <br>
+            <li> Connect Li-Ion/LiPoly Batteries as necessary, to allow Baymax to live longer. </li> <br>
+            <li> Upload your code to the Arduino. </li> <br>
+            <p><i>The code that we have made available to you allows Baymax to use his shoulders to lift his arms up and perform a hugging action using the elbow and wrist joints. Using these 3 contact points, you can make Baymax perform many different actions, some of which can be seen on this website (e.g. handshaking). Use these steps as a starting point and give yourself an opportunity for your creativity to roam free!</i></p> <br> 
+            <li>OPTIONAL: Use a needle and thread to sew Baymax into the seamless, non-obstructive doll that he once was. In the picture below, the Arduino, along with the breadboard, buttons, cables, and batteries have been tucked into the pouch we created on his back. We also cut a slit at the bottom of Baymax, and positioned the Arduino so that he can be easily plugged into a laptop. This allows you to easily upload code to him, even without direct access to the electronics.</li>
+            <br>
+            <img src="Media/back.jpg" width="40%" height="40%"> <br> <br>
+            <p><i>Note: If you proceed with this step, make sure to have an effecient way of replacing the batteries that you have connected, as they will run out of charge. Another pouch on the back, with easy access to place and remove the batteries, should do the trick!</i></p>
 		</ol>
 		</font> </p>
 	</div>
