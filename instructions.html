@@ -47,12 +47,16 @@
 		<p > <font face="verdana" size="4"> 
 		<ol style="padding: 20px 250px">
 			<li>Purchase your very own Baymax doll from <a href="http://www.amazon.com/Disney-Baymax-Plush-Hero-Medium/dp/B00DHEPM3Q/ref=pd_sim_sbs_468_6?ie=UTF8&dpID=31UWFuBHTLL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=14T900BD24WXFKDJYDA3">here</a> </li> <br>
-			<li>Cut small slits in his arms so that pieces of the following dimensions can snugly fit inside:</li> <br>
+            <li>Cut small slits in his arms so that pieces of the dimensions below can snugly fit inside. Cut a 1-inch slit on each shoulder, as shown below. Then cut 1/2-inch slits underneath his palms and at his elbow positions on each arm.</li> <br>
+            <img src="Media/arm.jpg" width="50%" height="50%"> <br>
 			<img src="lasercut/dimensions.png" width="50%" height="50%"> <br>
 			<li>Use the dimensions above to laser cut pieces for all 3 components of the arm (shoulder -> elbow -> wrist). The dxf file to use with the laser cut program has been made accessible to you and can be found in the "lasercut" folder in the github repository (link provided in Links section). Make 2 sets of the cuts - 1 for each arm. </li> <br>
 			<li>Glue the servo horns of your choice, and attach the servos and glue the acrylic pieces in the manner shown in these pictures</li> <br>
 			<img style="float:center;display:inline" src="Media/aerial-arm-piece.jpg" width="40%" height="40%"> <img style="float:center;display:inline" src="Media/side-arm-piece.jpg" width="40%" height="40%"> <br> <br>
-			<li></li>
+            <li> Attach the servo horns of the black servos to the round knobs at the shoulders of the Baymax plush doll. </li>
+            <li> Allow the wires coming out of the servos to exit the doll through the slits you have cut. Connect the orange line of each servo to a pin in the Arduino, and the red and black wires to the 5V and Ground pins coming from the Arduino, respectively. Use the following schematic to guide you in wiring the servos to the Arduino. The code provided in the github repository file "SmallServo.ino" follows this schematic. If you decide to change which pins you connect to the servos, make sure those changes are reflected in the file you upload to the Arduino as well. </li>
+            <img src="Arduino Diagram.jpg" width="50%" height="50%"> <br>
+            <li> Upload your code to the Arduino. </li>
 		</ol>
 		</font> </p>
 	</div>
